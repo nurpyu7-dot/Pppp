@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desa Wisata Lembah Hijau — Harmoni Alam & Budaya</title>
+    
+    <!-- Google Fonts: Plus Jakarta Sans & Playfair Display untuk kesan elegan dan alami -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Konfigurasi Warna & Tipografi Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emeraldDeep: '#064e3b',
+                        emeraldRich: '#047857',
+                        emeraldSoft: '#ecfdf5',
+                        warmCream: '#faf8f5',
+                        sandBeige: '#f3efe6',
+                        woodBrown: '#78350f',
+                        woodLight: '#b45309',
+                        charcoal: '#1f2937'
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-warmCream text-charcoal font-sans antialiased selection:bg-emeraldRich selection:text-white overflow-x-hidden">
+
+    <!-- ==================== NAVBAR ==================== -->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent text-white py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="#beranda" class="flex items-center space-x-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-emeraldRich flex items-center justify-center text-white shadow-lg group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-leaf text-lg"></i>
+                    </div>
+                    <div>
+                        <span class="font-serif font-bold text-xl tracking-wide block leading-none">Lembah Hijau</span>
+                        <span class="text-[11px] uppercase tracking-widest opacity-80 font-medium">Desa Wisata</span>
+                    </div>
+                </a>
+
+                <!-- Menu Desktop -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a href="#beranda" class="hover:text-emerald-300 transition-colors">Beranda</a>
+                    <a href="#tentang" class="hover:text-emerald-300 transition-colors">Tentang Desa</a>
+                    <a href="#destinasi" class="hover:text-emerald-300 transition-colors">Destinasi & Aktivitas</a>
+                    <a href="#galeri" class="hover:text-emerald-300 transition-colors">Galeri</a>
+                    <a href="#paket" class="hover:text-emerald-300 transition-colors">Paket Wisata</a>
+                    <a href="#kontak" class="hover:text-emerald-300 transition-colors">Kontak</a>
+                </nav>
+
+                <!-- Tombol CTA & Mobile Menu Toggle -->
+                <div class="flex items-center space-x-3">
+                    <a href="#paket" class="hidden sm:inline-flex items-center px-5 py-2.5 rounded-full bg-emeraldRich hover:bg-emeraldDeep text-white text-sm font-semibold shadow-md transition-all transform hover:-translate-y-0.5">
+                        Pesan Kunjungan
+                    </a>
+                    <button id="mobile-menu-btn" aria-label="Buka Menu" class="md:hidden p-2.5 rounded-xl bg-white/10 backdrop-blur-md hover:bg-white/20 transition-colors">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white text-charcoal shadow-2xl rounded-b-2xl mx-4 mt-3 p-5 border border-stone-100">
+            <nav class="flex flex-col space-y-3 text-base font-medium">
+                <a href="#beranda" class="mobile-link py-2 px-3 rounded-lg hover:bg-emeraldSoft hover:text-emeraldRich transition-colors">Beranda</a>
+                <a href="#tentang" class="mobile-link py-2 px-3 rounded-lg hover:bg-emeraldSoft hover:text-emeraldRich transition-colors">Tentang Desa</a>
+                <a href="#destinasi" class="mobile-link py-2 px-3 rounded-lg hover:bg-emeraldSoft hover:text-emeraldRich transition-colors">Destinasi & Aktivitas</a>
+                <a href="#galeri" class="mobile-link py-2 px-3 rounded-lg hover:bg-emeraldSoft hover:text-emeraldRich transition-colors">Galeri Foto</a>
+                <a href="#paket" class="mobile-link py-2 px-3 rounded-lg hover:bg-emeraldSoft hover:text-emeraldRich transition-colors">Paket Wisata</a>
+                <a href="#kontak" class="mobile-link py-2 px-3 rounded-lg hover:bg-emeraldSoft hover:text-emeraldRich transition-colors">Kontak & Lokasi</a>
+                <a href="#paket" class="mobile-link mt-2 text-center py-3 rounded-xl bg-emeraldRich text-white font-semibold shadow">Pesan Kunjungan Sekarang</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="beranda" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Image dengan Efek Gelap Halus -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1920&q=80" 
+                 onerror="this.src='https://placehold.co/1920x1080/064e3b/faf8f5?text=Pemandangan+Sawah+Terasering+Desa+Lembah+Hijau'"
+                 alt="Pemandangan Sawah Terasering dan Kabut Pagi di Desa Wisata Lembah Hijau" 
+                 class="w-full h-full object-cover object-center scale-105 transition-transform duration-1000">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-warmCream"></div>
+        </div>
+
+        <!-- Konten Utama Hero -->
+        <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white pt-20">
+            <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/25 text-xs sm:text-sm font-medium mb-6 reveal-element opacity-0 translate-y-6 transition-all duration-700">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>Surga Tersembunyi di Kaki Pegunungan Nusantara</span>
+            </div>
+
+            <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold leading-tight mb-6 drop-shadow-sm reveal-element opacity-0 translate-y-6 transition-all duration-700 delay-100">
+                Temukan Ketenangan di <br>
+                <span class="text-emerald-300 italic">Desa Wisata Lembah Hijau</span>
+            </h1>
+
+            <p class="max-w-2xl mx-auto text-base sm:text-lg text-stone-100/90 font-light leading-relaxed mb-10 reveal-element opacity-0 translate-y-6 transition-all duration-700 delay-200">
+                Hirup segarnya udara pegunungan berkabut pagi, susuri hamparan sawah terasering yang memukau, dan rasakan hangatnya keramahan budaya lokal yang lestari.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 reveal-element opacity-0 translate-y-6 transition-all duration-700 delay-300">
+                <a href="#destinasi" class="w-full sm:w-auto px-8 py-4 rounded-full bg-emeraldRich hover:bg-emeraldDeep text-white font-semibold shadow-xl hover:shadow-emerald-900/30 transition-all flex items-center justify-center space-x-2">
+                    <span>Jelajahi Destinasi</span>
+                    <i class="fa-solid fa-arrow-right text-sm"></i>
+                </a>
+                <a href="#tentang" class="w-full sm:w-auto px-8 py-4 rounded-full bg-white/15 hover:bg-white/25 backdrop-blur-md border border-white/30 text-white font-semibold transition-all flex items-center justify-center space-x-2">
+                    <i class="fa-regular fa-compass"></i>
+                    <span>Kisah Desa Kami</span>
+                </a>
+            </div>
+
+            <!-- Statistik Singkat -->
+            <div class="mt-16 grid grid-cols-3 gap-4 max-w-xl mx-auto bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 sm:p-5 text-white reveal-element opacity-0 translate-y-6 transition-all duration-700 delay-500">
+                <div>
+                    <p class="font-serif text-2xl sm:text-3xl font-bold text-emerald-300">850m</p>
+                    <p class="text-xs sm:text-sm text-stone-200">Ketinggian MDPL</p>
+                </div>
+                <div class="border-x border-white/20">
+                    <p class="font-serif text-2xl sm:text-3xl font-bold text-emerald-300">18°C</p>
+                    <p class="text-xs sm:text-sm text-stone-200">Suhu Rata-rata</p>
+                </div>
+                <div>
+                    <p class="font-serif text-2xl sm:text-3xl font-bold text-emerald-300">100%</p>
+                    <p class="text-xs sm:text-sm text-stone-200">Alam Lestari</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TENTANG DESA ==================== -->
+    <section id="tentang" class="py-20 lg:py-28 bg-warmCream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                
+                <!-- Kolom Gambar Kolase -->
+                <div class="lg:col-span-6 relative reveal-element opacity-0 translate-y-8 transition-all duration-700">
+                    <div class="grid grid-cols-2 gap-4">
+                        <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=800&q=80" 
+                             onerror="this.src='https://placehold.co/600x800/047857/ffffff?text=Terasering+Pagi'"
+                             alt="Pemandangan Sawah Berkabut" 
+                             class="w-full h-72 sm:h-96 object-cover rounded-3xl shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=800&q=80" 
+                             onerror="this.src='https://placehold.co/600x800/78350f/ffffff?text=Budaya+Lokal'"
+                             alt="Suasana Pedesaan Asri" 
+                             class="w-full h-72 sm:h-96 object-cover rounded-3xl shadow-xl mt-8">
+                    </div>
+                    <!-- Badge Mengambang -->
+                    <div class="absolute -bottom-5 left-6 sm:left-10 bg-white p-5 rounded-2xl shadow-xl border border-stone-100 flex items-center space-x-4 max-w-xs">
+                        <div class="w-12 h-12 rounded-xl bg-amber-100 text-woodBrown flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-seedling text-xl"></i>
+                        </div>
+                        <div>
+                            <p class="font-serif font-bold text-charcoal text-base">Warisan Sejak 1924</p>
+                            <p class="text-xs text-stone-500">Pertanian organik & kearifan lokal turun-temurun.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kolom Narasi -->
+                <div class="lg:col-span-6 reveal-element opacity-0 translate-y-8 transition-all duration-700 delay-150">
+                    <span class="text-emeraldRich font-semibold text-sm uppercase tracking-widest block mb-2">Tentang Desa Kami</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal leading-tight mb-6">
+                        Menjaga Harmoni Antara Manusia dan Alam
+                    </h2>
+                    <p class="text-stone-600 leading-relaxed mb-5 text-base sm:text-lg">
+                        Terletak di lembah subur yang dikelilingi gugusan pegunungan hijau, <strong>Desa Wisata Lembah Hijau</strong> berawal dari perkampungan agraris tradisional pada awal abad ke-20. Masyarakat kami hidup berdampingan dengan alam menggunakan sistem irigasi subak kuno dan pertanian ramah lingkungan.
+                    </p>
+                    <p class="text-stone-600 leading-relaxed mb-8">
+                        Setiap pagi, kabut tipis turun menyelimuti pematang sawah terasering, menciptakan panorama bak lukisan alam. Kini, kami membuka pintu bagi wisatawan yang rindu akan ketenangan, udara bersih, dan pengalaman hidup autentik bersama warga desa.
+                    </p>
+
+                    <!-- Fitur Unggulan Desa -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <div class="flex items-start space-x-3.5 bg-white p-4 rounded-2xl border border-stone-100 shadow-sm">
+                            <div class="w-10 h-10 rounded-xl bg-emeraldSoft text-emeraldRich flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-mountain-sun"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-charcoal text-sm sm:text-base">Panorama Pegunungan</h3>
+                                <p class="text-xs sm:text-sm text-stone-500 mt-1">Lanskap 360° lembah hijau, bukit berkabut, dan mata air murni.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3.5 bg-white p-4 rounded-2xl border border-stone-100 shadow-sm">
+                            <div class="w-10 h-10 rounded-xl bg-amber-50 text-woodBrown flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-hands-holding-circle"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-charcoal text-sm sm:text-base">Ekowisata Berkelanjutan</h3>
+                                <p class="text-xs sm:text-sm text-stone-500 mt-1">Setiap kunjungan mendukung pelestarian hutan dan ekonomi warga.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== DESTINASI & AKTIVITAS WISATA ==================== -->
+    <section id="destinasi" class="py-20 lg:py-28 bg-sandBeige/70">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header Section -->
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal-element opacity-0 translate-y-6 transition-all duration-700">
+                <span class="text-emeraldRich font-semibold text-sm uppercase tracking-widest block mb-2">Pengalaman Autentik</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-4">
+                    Destinasi & Aktivitas Pilihan
+                </h2>
+                <p class="text-stone-600 text-base sm:text-lg">
+                    Nikmati beragam aktivitas menyatu dengan alam dan budaya desa yang dirancang untuk menyegarkan tubuh dan pikiran Anda.
+                </p>
+            </div>
+
+            <!-- Grid Kartu Destinasi -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Kartu 1: Trekking Sawah Terasering -->
+                <div class="group bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-stone-100 flex flex-col reveal-element opacity-0 translate-y-8">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&w=800&q=80" 
+                             onerror="this.src='https://placehold.co/800x600/047857/ffffff?text=Trekking+Sawah'"
+                             alt="Trekking Sawah Terasering" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-emeraldDeep/85 backdrop-blur-sm text-white text-xs font-medium">
+                            Alam & Petualangan
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="font-serif text-xl font-bold text-charcoal mb-2 group-hover:text-emeraldRich transition-colors">
+                            Trekking Sawah Terasering
+                        </h3>
+                        <p class="text-stone-600 text-sm leading-relaxed mb-4 flex-1">
+                            Menyusuri jalur setapak pematang sawah di pagi hari ditemani pemandu lokal sambil belajar menanam padi organik.
+                        </p>
+                        <div class="pt-4 border-t border-stone-100 flex items-center justify-between text-xs text-stone-500 font-medium">
+                            <span><i class="fa-regular fa-clock text-emeraldRich mr-1"></i> 2 - 3 Jam</span>
+                            <span><i class="fa-solid fa-person-hiking text-emeraldRich mr-1"></i> Mudah</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kartu 2: Air Terjun Tirta Lestari -->
+                <div class="group bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-stone-100 flex flex-col reveal-element opacity-0 translate-y-8 delay-100">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=800&q=80" 
+                             onerror="this.src='https://placehold.co/800x600/064e3b/ffffff?text=Air+Terjun+Tirta'"
+                             alt="Air Terjun Tirta Lestari" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-emeraldDeep/85 backdrop-blur-sm text-white text-xs font-medium">
+                            Wisata Air
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="font-serif text-xl font-bold text-charcoal mb-2 group-hover:text-emeraldRich transition-colors">
+                            Air Terjun Tirta Lestari
+                        </h3>
+                        <p class="text-stone-600 text-sm leading-relaxed mb-4 flex-1">
+                            Air terjun setinggi 35 meter di tengah hutan bambu yang asri dengan kolam alami berair jernih dan menyegarkan.
+                        </p>
+                        <div class="pt-4 border-t border-stone-100 flex items-center justify-between text-xs text-stone-500 font-medium">
+                            <span><i class="fa-regular fa-clock text-emeraldRich mr-1"></i> Sepanjang Hari</span>
+                            <span><i class="fa-solid fa-water text-emeraldRich mr-1"></i> Mata Air Alami</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kartu 3: Sanggar Kerajinan Bambu & Tenun -->
+                <div class="group bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-stone-100 flex flex-col reveal-element opacity-0 translate-y-8 delay-200">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=800&q=80" 
+                             onerror="this.src='https://placehold.co/800x600/78350f/ffffff?text=Kerajinan+Lokal'"
+                             alt="Kerajinan Anyaman Bambu" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-woodBrown/90 backdrop-blur-sm text-white text-xs font-medium">
+                            Seni & Budaya
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="font-serif text-xl font-bold text-charcoal mb-2 group-hover:text-emeraldRich transition-colors">
+                            Lokakarya Kerajinan Lokal
+                        </h3>
+                        <p class="text-stone-600 text-sm leading-relaxed mb-4 flex-1">
+                            Belajar menganyam bambu dan membatik dengan pewarna alami daun-daunan bersama pengrajin senior desa.
+                        </p>
+                        <div class="pt-4 border-t border-stone-100 flex items-center justify-between text-xs text-stone-500 font-medium">
+                            <span><i class="fa-regular fa-clock text-woodBrown mr-1"></i> 90 Menit</span>
+                            <span><i class="fa-solid fa-gift text-woodBrown mr-1"></i> Bawa Pulang Karya</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kartu 4: Kuliner Tradisional Dapur Kayu -->
+                <div class="group bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-stone-100 flex flex-col reveal-element opacity-0 translate-y-8 delay-300">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" 
+                             onerror="this.src='https://placehold.co/800x600/b45309/ffffff?text=Kuliner+Nusantara'"
+                             alt="Kuliner Tradisional Desa" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-woodBrown/90 backdrop-blur-sm text-white text-xs font-medium">
+                            Kuliner Organik
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="font-serif text-xl font-bold text-charcoal mb-2 group-hover:text-emeraldRich transition-colors">
+                            Kuliner Dapur Tungku
+                        </h3>
+                        <p class="text-stone-600 text-sm leading-relaxed mb-4 flex-1">
+                            Sajian nasi liwet daun pisang, sayur lalapan segar petik langsung dari kebun, dan seduhan kopi robusta lereng gunung.
+                        </p>
+                        <div class="pt-4 border-t border-stone-100 flex items-center justify-between text-xs text-stone-500 font-medium">
+                            <span><i class="fa-solid fa-utensils text-woodBrown mr-1"></i> 100% Organik</span>
+                            <span><i class="fa-solid fa-mug-hot text-woodBrown mr-1"></i> Kopi Desa</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== GALERI FOTO & LIGHTBOX INTERAKTIF ==================== -->
+    <section id="galeri" class="py-20 lg:py-28 bg-warmCream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 reveal-element opacity-0 translate-y-6 transition-all duration-700">
+                <div>
+                    <span class="text-emeraldRich font-semibold text-sm uppercase tracking-widest block mb-2">Momen & Sudut Indah</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal">
+                        Galeri Desa Lembah Hijau
+                    </h2>
+                </div>
+                <p class="text-stone-500 text-sm sm:text-base mt-3 md:mt-0 max-w-md">
+                    Klik pada foto untuk memperbesar dan melihat keindahan suasana desa kami lebih dekat.
+                </p>
+            </div>
+
+            <!-- Grid Galeri Responsif -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+                <!-- Item 1 -->
+                <div class="gallery-item group relative rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer shadow-md aspect-[4/3] reveal-element opacity-0 translate-y-6"
+                     data-src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1400&q=85"
+                     data-title="Kabut Pagi di Terasering"
+                     data-desc="Sinar matahari pagi menembus kabut tipis di atas hamparan sawah terasering Desa Lembah Hijau.">
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80" 
+                         onerror="this.src='https://placehold.co/800x600/064e3b/ffffff?text=Kabut+Pagi'"
+                         alt="Kabut Pagi di Terasering" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5">
+                        <div class="text-white">
+                            <p class="font-serif font-bold text-base sm:text-lg">Kabut Pagi di Terasering</p>
+                            <p class="text-xs text-stone-200"><i class="fa-solid fa-expand mr-1"></i> Klik untuk memperbesar</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="gallery-item group relative rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer shadow-md aspect-[4/3] reveal-element opacity-0 translate-y-6 delay-75"
+                     data-src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1400&q=85"
+                     data-title="Lembah & Telaga Embun"
+                     data-desc="Pemandangan lembah hijau yang tenang dan udara segar di ketinggian 850 mdpl.">
+                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80" 
+                         onerror="this.src='https://placehold.co/800x600/047857/ffffff?text=Lembah+Hijau'"
+                         alt="Lembah & Telaga Embun" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5">
+                        <div class="text-white">
+                            <p class="font-serif font-bold text-base sm:text-lg">Lembah & Telaga Embun</p>
+                            <p class="text-xs text-stone-200"><i class="fa-solid fa-expand mr-1"></i> Klik untuk memperbesar</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="gallery-item group relative rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer shadow-md aspect-[4/3] reveal-element opacity-0 translate-y-6 delay-150"
+                     data-src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1400&q=85"
+                     data-title="Air Terjun Tirta Lestari"
+                     data-desc="Aliran air pegunungan yang jernih mengalir di antara bebatuan alami dan rimbunnya pepohonan.">
+                    <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=800&q=80" 
+                         onerror="this.src='https://placehold.co/800x600/064e3b/ffffff?text=Air+Terjun'"
+                         alt="Air Terjun Tirta Lestari" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5">
+                        <div class="text-white">
+                            <p class="font-serif font-bold text-base sm:text-lg">Air Terjun Tirta Lestari</p>
+                            <p class="text-xs text-stone-200"><i class="fa-solid fa-expand mr-1"></i> Klik untuk memperbesar</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="gallery-item group relative rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer shadow-md aspect-[4/3] reveal-element opacity-0 translate-y-6"
+                     data-src="https://images.unsplash.com/photo-1528183429752-a97d0bf99b5a?auto=format&fit=crop&w=1400&q=85"
+                     data-title="Hutan Bambu & Jalur Setapak"
+                     data-desc="Jalur jalan kaki teduh di bawah rimbunnya hutan bambu yang menenangkan jiwa.">
+                    <img src="https://images.unsplash.com/photo-1528183429752-a97d0bf99b5a?auto=format&fit=crop&w=800&q=80" 
+                         onerror="this.src='https://placehold.co/800x600/047857/ffffff?text=Hutan+Bambu'"
+                         alt="Hutan Bambu & Jalur Setapak" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5">
+                        <div class="text-white">
+                            <p class="font-serif font-bold text-base sm:text-lg">Hutan Bambu & Jalur Setapak</p>
+                            <p class="text-xs text-stone-200"><i class="fa-solid fa-expand mr-1"></i> Klik untuk memperbesar</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="gallery-item group relative rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer shadow-md aspect-[4/3] reveal-element opacity-0 translate-y-6 delay-75"
+                     data-src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=85"
+                     data-title="Puncak Bukit Pandang"
+                     data-desc="Titik terbaik untuk menyaksikan matahari terbit menyinari seluruh lembah desa.">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80" 
+                         onerror="this.src='https://placehold.co/800x600/064e3b/ffffff?text=Bukit+Pandang'"
+                         alt="Puncak Bukit Pandang" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5">
+                        <div class="text-white">
+                            <p class="font-serif font-bold text-base sm:text-lg">Puncak Bukit Pandang</p>
+                            <p class="text-xs text-stone-200"><i class="fa-solid fa-expand mr-1"></i> Klik untuk memperbesar</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="gallery-item group relative rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer shadow-md aspect-[4/3] reveal-element opacity-0 translate-y-6 delay-150"
+                     data-src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1400&q=85"
+                     data-title="Homestay Kayu Tradisional"
+                     data-desc="Penginapan bernuansa arsitektur kayu hangat dengan teras menghadap langsung ke kebun dan sawah.">
+                    <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=800&q=80" 
+                         onerror="this.src='https://placehold.co/800x600/78350f/ffffff?text=Homestay+Kayu'"
+                         alt="Homestay Kayu Tradisional" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5">
+                        <div class="text-white">
+                            <p class="font-serif font-bold text-base sm:text-lg">Homestay Kayu Tradisional</p>
+                            <p class="text-xs text-stone-200"><i class="fa-solid fa-expand mr-1"></i> Klik untuk memperbesar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PAKET WISATA & PEMESANAN INTERAKTIF ==================== -->
+    <section id="paket" class="py-20 lg:py-28 bg-emeraldDeep text-white relative overflow-hidden">
+        <!-- Dekorasi Latar Halus -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-emeraldRich/30 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-amber-900/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal-element opacity-0 translate-y-6 transition-all duration-700">
+                <span class="text-emerald-300 font-semibold text-sm uppercase tracking-widest block mb-2">Rencanakan Kunjungan</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+                    Pilihan Paket Wisata Desa
+                </h2>
+                <p class="text-emerald-100/80 text-base sm:text-lg">
+                    Pilih paket kunjungan yang sesuai dengan waktu liburan Anda. Pemandu lokal ramah siap menyambut kedatangan Anda.
+                </p>
+            </div>
+
+            <!-- Grid Kartu Paket -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+                
+                <!-- Paket 1: Jelajah Sehari -->
+                <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-3xl p-8 flex flex-col justify-between hover:bg-white/15 transition-all reveal-element opacity-0 translate-y-8">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-full bg-emerald-400/20 text-emerald-300 text-xs font-semibold">One Day Trip</span>
+                            <i class="fa-solid fa-sun text-emerald-300 text-xl"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold mb-2">Jelajah Sehari Lembah</h3>
+                        <p class="text-emerald-100/75 text-sm mb-6">Cocok untuk melepas penat akhir pekan bersama keluarga atau teman.</p>
+                        
+                        <div class="mb-6">
+                            <span class="font-serif text-4xl font-bold">Rp 175.000</span>
+                            <span class="text-sm text-emerald-200"> / orang</span>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-emerald-50 mb-8">
+                            <li class="flex items-center space-x-3">
+                                <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                                <span>Welcome drink wedang jahe & camilan desa</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                                <span>Trekking sawah terasering & Air Terjun Tirta</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                                <span>1x Makan siang nasi liwet organik</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                                <span>Pemandu wisata lokal & dokumentasi</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button onclick="openBookingModal('Jelajah Sehari Lembah', 175000)" 
+                            class="w-full py-3.5 rounded-xl bg-white text-emeraldDeep hover:bg-emerald-100 font-bold transition-colors shadow-lg">
+                        Pilih Paket Ini
+                    </button>
+                </div>
+
+                <!-- Paket 2: Menginap & Budaya (Populer) -->
+                <div class="bg-warmCream text-charcoal rounded-3xl p-8 flex flex-col justify-between shadow-2xl ring-4 ring-emerald-400/50 relative transform lg:-translate-y-3 reveal-element opacity-0 translate-y-8 delay-100">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-woodLight text-white text-xs font-bold uppercase tracking-wider shadow">
+                        Paling Diminati
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-4 mt-2">
+                            <span class="px-3 py-1 rounded-full bg-emeraldSoft text-emeraldRich text-xs font-semibold">2 Hari 1 Malam</span>
+                            <i class="fa-solid fa-house-chimney-window text-woodBrown text-xl"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold mb-2">Live-In & Homestay Kayu</h3>
+                        <p class="text-stone-600 text-sm mb-6">Rasakan pengalaman menginap di rumah kayu warga dan bangun disambut kabut pagi.</p>
+                        
+                        <div class="mb-6">
+                            <span class="font-serif text-4xl font-bold text-emeraldDeep">Rp 450.000</span>
+                            <span class="text-sm text-stone-500"> / orang</span>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-stone-700 mb-8">
+                            <li class="flex items-center space-x-3">
+                                <i class="fa-solid fa-circle-check text-emeraldRich"></i>
+                                <span>Menginap 1 malam di Homestay Kayu Asri</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fa-solid fa-circle-check text-emeraldRich"></i>
+                                <span>3x Makan menu tradisional + kopi sore</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fa-solid fa-circle-check text-emeraldRich"></i>
+                                <span>Sunrise trekking ke Bukit Pandang</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fa-solid fa-circle-check text-emeraldRich"></i>
+                                <span>Lokakarya anyaman bambu / membatik alami</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fa-solid fa-circle-check text-emeraldRich"></i>
+                                <span>Api unggun & musik akustik bambu malam hari</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button onclick="openBookingModal('Live-In & Homestay Kayu (2H1M)', 450000)" 
+                            class="w-full py-3.5 rounded-xl bg-emeraldRich hover:bg-emeraldDeep text-white font-bold transition-colors shadow-lg">
+                        Pesan Paket Populer
+                    </button>
+                </div>
+
+                <!-- Paket 3: Retret & Edukasi Keluarga -->
+                <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-3xl p-8 flex flex-col justify-between hover:bg-white/15 transition-all reveal-element opacity-0 translate-y-8 delay-200">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-full bg-amber-400/20 text-amber-200 text-xs font-semibold">Grup / Keluarga</span>
+                            <i class="fa-solid fa-people-roof text-amber-200 text-xl"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold mb-2">Ekowisata & Panen Raya</h3>
+                        <p class="text-emerald-100/75 text-sm mb-6">Program edukasi alam khusus rombongan keluarga, sekolah, atau komunitas.</p>
+                        
+                        <div class="mb-6">
+                            <span class="font-serif text-4xl font-bold">Rp 250.000</span>
+                            <span class="text-sm text-emerald-200"> / orang</span>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-emerald-50 mb-8">
+                            <li class="flex items-center space-x-3">
+                                <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                                <span>Praktik menanam & memanen sayuran organik</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                                <span>Edukasi pengolahan kompos & mata air</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                                <span>Permainan tradisional anak-anak desa</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                                <span>Makan siang prasmanan & buah tangan hasil panen</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button onclick="openBookingModal('Ekowisata & Panen Raya', 250000)" 
+                            class="w-full py-3.5 rounded-xl bg-white text-emeraldDeep hover:bg-emerald-100 font-bold transition-colors shadow-lg">
+                        Pilih Paket Ini
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== KONTAK & LOKASI ==================== -->
+    <section id="kontak" class="py-20 lg:py-28 bg-warmCream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-xl border border-stone-100 overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-12">
+                    
+                    <!-- Informasi Kontak -->
+                    <div class="lg:col-span-5 p-8 sm:p-12 bg-sandBeige/50 flex flex-col justify-between">
+                        <div>
+                            <span class="text-emeraldRich font-semibold text-sm uppercase tracking-widest block mb-2">Hubungi Kami</span>
+                            <h2 class="font-serif text-3xl font-bold text-charcoal mb-4">
+                                Kunjungi Desa Wisata Lembah Hijau
+                            </h2>
+                            <p class="text-stone-600 text-sm leading-relaxed mb-8">
+                                Tim Pokdarwis (Kelompok Sadar Wisata) kami siap membantu merencanakan perjalanan terbaik Anda menuju desa.
+                            </p>
+
+                            <div class="space-y-5">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-10 h-10 rounded-xl bg-emeraldSoft text-emeraldRich flex items-center justify-center shrink-0">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-charcoal text-sm">Alamat Sekretariat</h4>
+                                        <p class="text-stone-600 text-sm mt-0.5">Jl. Raya Lembah Hijau No. 12, Kec. Pegunungan Sejuk, Kab. Nusantara Indah 55582</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-10 h-10 rounded-xl bg-emeraldSoft text-emeraldRich flex items-center justify-center shrink-0">
+                                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-charcoal text-sm">WhatsApp & Telepon</h4>
+                                        <p class="text-stone-600 text-sm mt-0.5">+62 812-3456-7890 (Pusat Informasi)</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-10 h-10 rounded-xl bg-emeraldSoft text-emeraldRich flex items-center justify-center shrink-0">
+                                        <i class="fa-regular fa-clock"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-charcoal text-sm">Jam Operasional Wisata</h4>
+                                        <p class="text-stone-600 text-sm mt-0.5">Setiap Hari: 06.00 – 18.00 WIB (Check-in Homestay 24 Jam)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sosial Media -->
+                        <div class="mt-10 pt-6 border-t border-stone-200/80 flex items-center space-x-4">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-stone-500">Ikuti Kami:</span>
+                            <a href="#kontak" aria-label="Instagram" class="w-9 h-9 rounded-full bg-white text-charcoal hover:bg-emeraldRich hover:text-white flex items-center justify-center shadow-sm transition-colors">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#kontak" aria-label="YouTube" class="w-9 h-9 rounded-full bg-white text-charcoal hover:bg-emeraldRich hover:text-white flex items-center justify-center shadow-sm transition-colors">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a href="#kontak" aria-label="TikTok" class="w-9 h-9 rounded-full bg-white text-charcoal hover:bg-emeraldRich hover:text-white flex items-center justify-center shadow-sm transition-colors">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Form Pertanyaan Cepat & Peta Visual -->
+                    <div class="lg:col-span-7 p-8 sm:p-12">
+                        <h3 class="font-serif text-2xl font-bold text-charcoal mb-2">Kirim Pesan atau Pertanyaan</h3>
+                        <p class="text-stone-500 text-sm mb-6">Punya pertanyaan seputar akses jalan, rombongan besar, atau fasilitas? Tulis pesan di bawah ini.</p>
+
+                        <form id="contact-form" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-stone-600 uppercase mb-1.5">Nama Lengkap</label>
+                                    <input type="text" required placeholder="Contoh: Budi Santoso" 
+                                           class="w-full px-4 py-3 rounded-xl bg-warmCream border border-stone-200 focus:border-emeraldRich focus:ring-2 focus:ring-emeraldRich/20 outline-none text-sm transition-all">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-stone-600 uppercase mb-1.5">Nomor WhatsApp / Email</label>
+                                    <input type="text" required placeholder="0812xxxx atau email@anda.com" 
+                                           class="w-full px-4 py-3 rounded-xl bg-warmCream border border-stone-200 focus:border-emeraldRich focus:ring-2 focus:ring-emeraldRich/20 outline-none text-sm transition-all">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-stone-600 uppercase mb-1.5">Pesan Anda</label>
+                                <textarea rows="3" required placeholder="Tuliskan rencana kunjungan atau pertanyaan Anda..." 
+                                          class="w-full px-4 py-3 rounded-xl bg-warmCream border border-stone-200 focus:border-emeraldRich focus:ring-2 focus:ring-emeraldRich/20 outline-none text-sm transition-all"></textarea>
+                            </div>
+
+                            <button type="submit" class="px-7 py-3.5 rounded-xl bg-woodBrown hover:bg-woodLight text-white font-semibold text-sm shadow-md transition-all inline-flex items-center space-x-2">
+                                <span>Kirim Pesan</span>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </button>
+                        </form>
+
+                        <!-- Kartu Akses Lokasi -->
+                        <div class="mt-8 p-4 rounded-2xl bg-emeraldSoft/70 border border-emerald-200/70 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 rounded-full bg-emeraldRich text-white flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-route"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-emeraldDeep text-sm">Akses Mudah Kendaraan</p>
+                                    <p class="text-xs text-stone-600">± 45 menit dari pusat kota melalui jalan beraspal mulus.</p>
+                                </div>
+                            </div>
+                            <span class="text-xs font-semibold text-emeraldRich bg-white px-3 py-1.5 rounded-lg shadow-sm">
+                                Koord: -7.5407, 110.4457
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-charcoal text-stone-300 py-12 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center space-x-3">
+                    <div class="w-9 h-9 rounded-xl bg-emeraldRich flex items-center justify-center text-white">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <div>
+                        <span class="font-serif font-bold text-lg text-white block leading-none">Desa Wisata Lembah Hijau</span>
+                        <span class="text-xs text-stone-400">Lestarikan Alam, Muliakan Budaya</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-6 text-sm text-stone-400">
+                    <a href="#beranda" class="hover:text-white transition-colors">Beranda</a>
+                    <a href="#tentang" class="hover:text-white transition-colors">Tentang</a>
+                    <a href="#destinasi" class="hover:text-white transition-colors">Destinasi</a>
+                    <a href="#galeri" class="hover:text-white transition-colors">Galeri</a>
+                    <a href="#paket" class="hover:text-white transition-colors">Paket</a>
+                </div>
+
+                <p class="text-xs text-stone-500 text-center md:text-right">
+                    &copy; 2026 Pokdarwis Desa Wisata Lembah Hijau. Hak Cipta Dilindungi.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== MODAL LIGHTBOX GALERI ==================== -->
+    <div id="lightbox-modal" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-sm flex items-center justify-center p-4">
+        <button id="close-lightbox" aria-label="Tutup Galeri" class="absolute top-5 right-5 w-11 h-11 rounded-full bg-white/15 hover:bg-white/30 text-white flex items-center justify-center transition-colors">
+            <i class="fa-solid fa-xmark text-xl"></i>
+        </button>
+        <div class="max-w-4xl w-full bg-charcoal rounded-3xl overflow-hidden shadow-2xl border border-white/10">
+            <img id="lightbox-img" src="" alt="Preview Galeri" class="w-full max-h-[70vh] object-contain bg-black">
+            <div class="p-6 text-white">
+                <h3 id="lightbox-title" class="font-serif text-xl sm:text-2xl font-bold mb-1"></h3>
+                <p id="lightbox-desc" class="text-stone-300 text-sm"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== MODAL PEMESANAN PAKET WISATA ==================== -->
+    <div id="booking-modal" class="fixed inset-0 z-50 hidden bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative my-8">
+            <button id="close-booking" aria-label="Tutup Pemesanan" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-stone-100 hover:bg-stone-200 text-stone-600 flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="flex items-center space-x-3 mb-4">
+                <div class="w-10 h-10 rounded-xl bg-emeraldSoft text-emeraldRich flex items-center justify-center">
+                    <i class="fa-solid fa-ticket"></i>
+                </div>
+                <div>
+                    <h3 class="font-serif text-xl font-bold text-charcoal">Formulir Reservasi Wisata</h3>
+                    <p class="text-xs text-stone-500">Hitung estimasi biaya & pesan jadwal kunjungan Anda</p>
+                </div>
+            </div>
+
+            <form id="booking-form" class="space-y-4 mt-5">
+                <div>
+                    <label class="block text-xs font-semibold text-stone-600 uppercase mb-1">Paket Terpilih</label>
+                    <input type="text" id="booking-package-name" readonly 
+                           class="w-full px-4 py-2.5 rounded-xl bg-emeraldSoft/60 border border-emerald-200 font-semibold text-emeraldDeep text-sm">
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-stone-600 uppercase mb-1">Tanggal Kunjungan</label>
+                        <input type="date" id="booking-date" required 
+                               class="w-full px-4 py-2.5 rounded-xl bg-warmCream border border-stone-200 focus:border-emeraldRich outline-none text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-stone-600 uppercase mb-1">Jumlah Peserta (Orang)</label>
+                        <input type="number" id="booking-guests" min="1" max="100" value="2" required 
+                               class="w-full px-4 py-2.5 rounded-xl bg-warmCream border border-stone-200 focus:border-emeraldRich outline-none text-sm">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-stone-600 uppercase mb-1">Nama Pemesan</label>
+                    <input type="text" id="booking-name" required placeholder="Masukkan nama lengkap Anda" 
+                           class="w-full px-4 py-2.5 rounded-xl bg-warmCream border border-stone-200 focus:border-emeraldRich outline-none text-sm">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-stone-600 uppercase mb-1">Nomor WhatsApp Aktif</label>
+                    <input type="tel" id="booking-phone" required placeholder="Contoh: 08123456789" 
+                           class="w-full px-4 py-2.5 rounded-xl bg-warmCream border border-stone-200 focus:border-emeraldRich outline-none text-sm">
+                </div>
+
+                <!-- Ringkasan Total Otomatis -->
+                <div class="p-4 rounded-2xl bg-sandBeige flex items-center justify-between">
+                    <div>
+                        <p class="text-xs text-stone-500">Estimasi Total Biaya</p>
+                        <p id="booking-price-detail" class="text-xs text-stone-600 font-medium">2 orang x Rp 175.000</p>
+                    </div>
+                    <p id="booking-total" class="font-serif text-2xl font-bold text-emeraldDeep">Rp 350.000</p>
+                </div>
+
+                <button type="submit" class="w-full py-3.5 rounded-xl bg-emeraldRich hover:bg-emeraldDeep text-white font-bold shadow-lg transition-colors">
+                    Konfirmasi Reservasi
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ==================== NOTIFIKASI TOAST (PENGGANTI ALERT) ==================== -->
+    <div id="toast-notification" class="fixed bottom-6 right-6 z-50 max-w-sm bg-charcoal text-white p-4 rounded-2xl shadow-2xl border border-stone-700 transform translate-y-24 opacity-0 transition-all duration-300 flex items-start space-x-3 pointer-events-none">
+        <div class="w-8 h-8 rounded-full bg-emeraldRich text-white flex items-center justify-center shrink-0 mt-0.5">
+            <i class="fa-solid fa-check"></i>
+        </div>
+        <div>
+            <h4 id="toast-title" class="font-bold text-sm">Berhasil!</h4>
+            <p id="toast-message" class="text-xs text-stone-300 mt-1 leading-relaxed"></p>
+        </div>
+    </div>
+
+    <!-- ==================== JAVASCRIPT INTERAKTIF ==================== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Efek Navbar Transparan ke Solid saat Scroll
+            const navbar = document.getElementById('navbar');
+            const handleScroll = () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.remove('bg-transparent', 'text-white', 'py-4');
+                    navbar.classList.add('bg-white/95', 'backdrop-blur-md', 'text-charcoal', 'shadow-md', 'py-3');
+                } else {
+                    navbar.classList.add('bg-transparent', 'text-white', 'py-4');
+                    navbar.classList.remove('bg-white/95', 'backdrop-blur-md', 'text-charcoal', 'shadow-md', 'py-3');
+                }
+            };
+            window.addEventListener('scroll', handleScroll);
+            handleScroll();
+
+            // 2. Toggle Menu Mobile
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // 3. Animasi Muncul Halus saat Scroll (Intersection Observer)
+            const revealElements = document.querySelectorAll('.reveal-element');
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.remove('opacity-0', 'translate-y-6', 'translate-y-8');
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.12,
+                rootMargin: '0px 0px -40px 0px'
+            });
+
+            revealElements.forEach(el => revealObserver.observe(el));
+
+            // 4. Galeri Lightbox Interaktif
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            const lightboxModal = document.getElementById('lightbox-modal');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxTitle = document.getElementById('lightbox-title');
+            const lightboxDesc = document.getElementById('lightbox-desc');
+            const closeLightbox = document.getElementById('close-lightbox');
+
+            galleryItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    lightboxImg.src = item.dataset.src;
+                    lightboxTitle.textContent = item.dataset.title;
+                    lightboxDesc.textContent = item.dataset.desc;
+                    lightboxModal.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+
+            const hideLightbox = () => {
+                lightboxModal.classList.add('hidden');
+                document.body.style.overflow = '';
+            };
+
+            closeLightbox.addEventListener('click', hideLightbox);
+            lightboxModal.addEventListener('click', (e) => {
+                if (e.target === lightboxModal) hideLightbox();
+            });
+
+            // 5. Sistem Pemesanan Paket Wisata Interaktif
+            const bookingModal = document.getElementById('booking-modal');
+            const closeBooking = document.getElementById('close-booking');
+            const bookingForm = document.getElementById('booking-form');
+            const packageNameInput = document.getElementById('booking-package-name');
+            const guestsInput = document.getElementById('booking-guests');
+            const dateInput = document.getElementById('booking-date');
+            const priceDetailEl = document.getElementById('booking-price-detail');
+            const totalEl = document.getElementById('booking-total');
+
+            let currentUnitPrice = 175000;
+
+            // Set tanggal minimal hari ini
+            const today = new Date().toISOString().split('T')[0];
+            dateInput.setAttribute('min', today);
+            dateInput.value = today;
+
+            const formatRupiah = (angka) => {
+                return 'Rp ' + angka.toLocaleString('id-ID');
+            };
+
+            const updateTotalPrice = () => {
+                const guests = Math.max(1, parseInt(guestsInput.value) || 1);
+                const total = guests * currentUnitPrice;
+                priceDetailEl.textContent = `${guests} orang x ${formatRupiah(currentUnitPrice)}`;
+                totalEl.textContent = formatRupiah(total);
+            };
+
+            guestsInput.addEventListener('input', updateTotalPrice);
+
+            window.openBookingModal = (packageName, price) => {
+                currentUnitPrice = price;
+                packageNameInput.value = packageName;
+                guestsInput.value = 2;
+                updateTotalPrice();
+                bookingModal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            };
+
+            const hideBookingModal = () => {
+                bookingModal.classList.add('hidden');
+                document.body.style.overflow = '';
+            };
+
+            closeBooking.addEventListener('click', hideBookingModal);
+            bookingModal.addEventListener('click', (e) => {
+                if (e.target === bookingModal) hideBookingModal();
+            });
+
+            // Fungsi Notifikasi Toast Kustom
+            const showToast = (title, message) => {
+                const toast = document.getElementById('toast-notification');
+                document.getElementById('toast-title').textContent = title;
+                document.getElementById('toast-message').textContent = message;
+
+                toast.classList.remove('translate-y-24', 'opacity-0');
+                toast.classList.add('translate-y-0', 'opacity-100');
+
+                setTimeout(() => {
+                    toast.classList.add('translate-y-24', 'opacity-0');
+                    toast.classList.remove('translate-y-0', 'opacity-100');
+                }, 5000);
+            };
+
+            // Submit Pemesanan Paket
+            bookingForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const name = document.getElementById('booking-name').value;
+                const pkg = packageNameInput.value;
+                const guests = guestsInput.value;
+                const date = dateInput.value;
+
+                hideBookingModal();
+                bookingForm.reset();
+                dateInput.value = today;
+
+                showToast(
+                    'Reservasi Berhasil Dicatat!',
+                    `Terima kasih ${name}. Pemesanan "${pkg}" untuk ${guests} orang pada tanggal ${date} telah diterima. Admin desa akan segera menghubungi WhatsApp Anda.`
+                );
+            });
+
+            // Submit Form Kontak
+            const contactForm = document.getElementById('contact-form');
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                contactForm.reset();
+                showToast(
+                    'Pesan Terkirim!',
+                    'Terima kasih telah menghubungi Desa Wisata Lembah Hijau. Tim kami akan segera membalas pesan Anda.'
+                );
+            });
+
+            // Tutup Modal dengan Tombol Escape
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    hideLightbox();
+                    hideBookingModal();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
